@@ -18,14 +18,6 @@ module.exports = declare((api, { target = '', options = {} } = {}) => {
         },
       ],
     ],
-    plugins: [
-      [
-        require('@babel/plugin-transform-runtime'),
-        {
-          ...options.transformRuntime,
-          version: '^7.20.7',
-        },
-      ],
-    ],
+    plugins: [],
   };
 });
